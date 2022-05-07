@@ -1,17 +1,12 @@
-import {Request,Response} from 'express';
-import {Pet} from '../models/pet';
-import {createMenuObject} from '../helpers/createMenuObject'
-export const search = (req:Request,res:Response) =>{
-    let query:string = req.query.q as string;
+import { Request,Response } from "express";
+import { Pet } from "../models/pet";
 
-    if(!query) {
-        res.redirect('/home');
-        return;
-    }
-    let list = Pet.getFromName(query);
+export const search = (req:Request,res:Response)=>{
+    let nome = req.query.nome as string;
+    let list = Pet.getFromName(nome);
     res.render('pages/page',{
-        menu: createMenuObject(''),
-        list,
-        query
+        list
     });
 }
+
+

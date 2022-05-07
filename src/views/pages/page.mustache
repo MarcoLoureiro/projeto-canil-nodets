@@ -1,24 +1,32 @@
 {{>partials/header}}
 
 {{#banner}}
-<section class="banner" style="background-image: url('images/{{background}}')">{{title}}</section>
+<section class="banner" style="background-image: url('images/{{img}}')">{{title}}</section>
 <h2>{{title}} disponíveis para adoção</h2>
 {{/banner}}
 <div class="container list">
     {{#list}}
-    <div class="item">
-        <img src="images/{{image}}" class="item--image" />
-        <div class="item--name">{{name}}</div>
-        <div class="item--color">Cor: {{color}}</div>
-        <div class="item--genre">Gênero: {{sex}}</div>
+    <form method="post" action="/details-pet">
+            <button class="botao_pet" type="submit">
+                <div class="item">
+                    <img src="images/{{image}}" class="item--image" />
+                    <div class="item--name">{{name}}</div>
+                    <div class="item--color">Cor: {{color}}</div>
+                    <div class="item--genre">Gênero: {{sex}}</div>
+                    <input type="hidden" name="imgPet" value="{{image}}">
+                    <input type="hidden" name="infos" value="{{name}},{{color}},{{sex}}">
+                    <input type="hidden" name="description" value="{{description}}">
+                </div>
+            </button>
+    </form>
+    {{/list}}
+</div>
+    {{^list}}
+    <div class="container no-list">
+    <h2>Não encontrados pets com as especificações</h2>
     </div>
     {{/list}}
-    
-</div>
 
-{{^list}}
-    <div class="container no-list">
-        <h2>Não há animais com essas especificações de pesquisa</h2>
-{{/list}}
 
-{{>partials/footer}} 
+
+{{>partials/footer}}
