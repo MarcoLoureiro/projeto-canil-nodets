@@ -15,12 +15,12 @@ Página principal
  
 Filtro
 ![dogs](https://user-images.githubusercontent.com/94862631/167271395-d67e64dd-0ff4-4ac9-ab63-091757597483.png)
-
 </br>
+
 Detalhes
-![details](https://user-images.githubusercontent.com/94862631/167271406-73d2dfaa-1549-48f4-9273-90d3ff059d86.png)
-
+![details](https://user-images.githubusercontent.com/94862631/167271459-f162a5d6-c158-4b27-97b3-e117680067d6.png)
 </br>
+
 Pesquisa por nome
 ![search](https://user-images.githubusercontent.com/94862631/167271424-9418574f-32da-45e8-abad-9ceaff868765.png)
 
