@@ -29,3 +29,6 @@ Pesquisa por nome
 
 # Para executar o projeto
 `npm run dev`
+
+# Para efetuar os testes unitários
+`npx jest`
