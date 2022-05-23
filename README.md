@@ -1,5 +1,5 @@
 # projeto-canil-nodets
-Projeto feito com node e Typescript
+Projeto feito com node,typescript e mustache
 
 ### Pré-requisitos
 `npm i -g nodemon typescript ts-node`
